@@ -1,10 +1,8 @@
-import { AboutSection } from "../components/AboutSection";
-import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import { HeroSection } from "../components/HeroSection";
 import { NavBar } from "../components/NavBar";
+import { PhilosophySection } from "../components/PhilosophySection";
 import { ProjectsSection } from "../components/ProjectsSection";
-import { SkillsSection } from "../components/SkillsSection";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { StarBackground } from '@/components/StarBackground'
 
@@ -23,10 +21,8 @@ export const Home = () => {
         {/* Main Content */}
         <main>
             <HeroSection />
-            <AboutSection />
-            <SkillsSection />
             <ProjectsSection />
-            <ContactSection />
+            <PhilosophySection />
         </main>
 
 

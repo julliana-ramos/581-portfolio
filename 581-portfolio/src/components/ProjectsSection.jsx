@@ -3,28 +3,28 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react"
 const projects = [
     {
      id: 1,
-     title: "pogi!",
-     description: "cutie",
-     image: "/projects/pogi.jpg",
-     tags: ["React","TailwindCSS", "Supabase"],
-     demoUrl: "#",
-     githubUrl: "#",
+     title: "A Family of Buttons",
+     description: "A pixel art web application that illustrates my team's individual personalities and group dynamic through button interactions.",
+     image: "/projects/project1.png",
+     tags: ["HTML","CSS", "JavaScript"],
+     demoUrl: "https://jasonvery.github.io/CPSC581Project1/",
+     githubUrl: "https://github.com/Aljaysa/Button-Personality-Project",
     },
     {
         id: 2,
-        title: "pogi 2!",
-        description: "super cutie",
-        image: "/projects/pogi.jpg",
-        tags: ["React","TailwindCSS", "Supabase"],
+        title: "Expertise Sharing",
+        description: "test",
+        image: "/projects/project1.png",
+        tags: ["test","test", "test"],
         demoUrl: "#",
         githubUrl: "#",
     },
     {
     id: 3,
-    title: "pogi 3!",
-    description: "extra super cutie",
-    image: "/projects/pogi.jpg",
-    tags: ["React","TailwindCSS", "Supabase"],
+    title: "Group Project 3",
+    description: "test",
+    image: "/projects/project1.png",
+    tags: ["test","test", "test"],
     demoUrl: "#",
     githubUrl: "#",
     },
@@ -39,7 +39,8 @@ export const ProjectsSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Here are some of my recent projects. Describe in a sentence...
+                    Here are some of my recent projects. Click on a card for my design process behind that project,
+                    or click on the icons to view that project's demo or GitHub.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -50,7 +51,7 @@ export const ProjectsSection = () => {
                             </div>
                         
                         <div className="p-6">
-                            <div className="flex flex-wrap gap-2 mb-4">
+                            <div className="flex flex-wrap justify-center gap-2 mb-4">
                                 {project.tags.map((tag) => (
                                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                                         {tag}
@@ -62,7 +63,7 @@ export const ProjectsSection = () => {
                         <p className="text-muted-foreground text-sm mb-4">
                             {project.description}
                         </p>
-                        <div className="felx justify-between items-center">
+                        <div className="flex justify-between items-center">
                             <div className="flex space-x-3">
                                 <a 
                                     href={project.demoUrl} 
@@ -89,9 +90,9 @@ export const ProjectsSection = () => {
                 <a 
                     className="cosmic-button w-fit flex items-center mx-auto gap-2" 
                     target="_blank"
-                    href="#"
+                    href="https://github.com/julliana-ramos"
                 >
-                    Check My Github <ArrowRight size={16} />
+                    View My Github <ArrowRight size={16} />
                 </a>
 
             </div>

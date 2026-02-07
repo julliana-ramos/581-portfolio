@@ -4,11 +4,8 @@ import { useState, useEffect } from "react"
 
 const navItems = [
     {name: "Home", href: "#hero"},
-    {name: "About", href: "#about"},
-    {name: "Skills", href: "#skills"},
     {name: "Projects", href: "#projects"},
-    {name: "Contact", href: "#contact"},
-
+    {name: "Philosophy", href: "#philosophy"},
 ]
 
 export const NavBar = () => {
@@ -34,8 +31,8 @@ export const NavBar = () => {
             <div className="container flex items-center justify-between md:pr-24">
                 <a className="text-xl font-bold text-primary flex items-center" href="#hero">
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground"> Julliana  </span> {" "}
-                        Ramos
+                        <span className="text-glow text-foreground"> CPSC 581  </span> {" "}
+                        Portfolio
                     </span>
                 </a>
 
