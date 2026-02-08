@@ -1,101 +1,131 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react"
-
-const projects = [
-    {
-     id: 1,
-     title: "A Family of Buttons",
-     description: "A pixel art web application that illustrates my team's individual personalities and group dynamic through button interactions.",
-     image: "/projects/project1.png",
-     tags: ["HTML","CSS", "JavaScript"],
-     demoUrl: "https://jasonvery.github.io/CPSC581Project1/",
-     githubUrl: "https://github.com/Aljaysa/Button-Personality-Project",
-    },
-    {
-        id: 2,
-        title: "Expertise Sharing",
-        description: "test",
-        image: "/projects/project1.png",
-        tags: ["test","test", "test"],
-        demoUrl: "#",
-        githubUrl: "#",
-    },
-    {
-    id: 3,
-    title: "Group Project 3",
-    description: "test",
-    image: "/projects/project1.png",
-    tags: ["test","test", "test"],
-    demoUrl: "#",
-    githubUrl: "#",
-    },
-]
+import { useState } from "react"
+import { Modal } from "@/components/Modal"
+import { projects } from "@/data/projects"
 
 export const ProjectsSection = () => {
-    return (
-        <section id="projects" className="py-24 px-4 relative">
-            <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:4xl font-bold mb-4 text-center"> 
-                    Featured <span className="text-primary"> Projects </span>
-                </h2>
+  const [selectedProject, setSelectedProject] = useState(null)
 
-                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Here are some of my recent projects. Click on a card for my design process behind that project,
-                    or click on the icons to view that project's demo or GitHub.
+  return (
+    <section id="projects" className="py-24 px-4 relative">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-3xl md:4xl font-bold mb-4 text-center">
+          Featured <span className="text-primary"> Projects </span>
+        </h2>
+
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Here are some of my recent projects. Click on a card for more
+          information on my design process behind that project, or click on the
+          icons to view that project's demo or GitHub.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, key) => (
+            <div
+              key={key}
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover cursor-pointer"
+              onClick={() => setSelectedProject(project)}
+            >
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              <div className="p-6">
+                <div className="flex flex-wrap justify-center gap-2 mb-4">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">
+                  {project.description}
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project,key) =>
-                        <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
-                            <div className="h-48 overflow-hidden">
-                                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                            </div>
-                        
-                        <div className="p-6">
-                            <div className="flex flex-wrap justify-center gap-2 mb-4">
-                                {project.tags.map((tag) => (
-                                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
-                                        {tag}
-                                    </span>
-                                ))}
-                            </div>
-
-                        <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                        <p className="text-muted-foreground text-sm mb-4">
-                            {project.description}
-                        </p>
-                        <div className="flex justify-between items-center">
-                            <div className="flex space-x-3">
-                                <a 
-                                    href={project.demoUrl} 
-                                    target="_blank"
-                                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                > 
-                                    <ExternalLink size={20}/>
-                                </a>
-                                <a 
-                                    href={project.githubUrl}
-                                    target="_blank"
-                                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                > 
-                                    <Github size={20}/>
-                                </a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                )}
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3">
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div className="text-center mt-12">
-                <a 
-                    className="cosmic-button w-fit flex items-center mx-auto gap-2" 
-                    target="_blank"
-                    href="https://github.com/julliana-ramos"
-                >
-                    View My Github <ArrowRight size={16} />
-                </a>
-
-            </div>
+          ))}
         </div>
+
+        <div className="text-center mt-12">
+          <a
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/julliana-ramos"
+          >
+            View My Github <ArrowRight size={16} />
+          </a>
+        </div>
+      </div>
+
+    {/* Entire Modal section was generated using ChatGPT. */}
+      <Modal
+        isOpen={!!selectedProject}
+        title={selectedProject?.title}
+        onClose={() => setSelectedProject(null)}
+      >
+        {selectedProject && (
+          <div className="space-y-4">
+            {/* Mixed content rendering */}
+            {selectedProject.content?.map((block, i) => {
+              if (block.type === "text") {
+                return (
+                  <p key={i} className="text-muted-foreground">
+                    {block.value}
+                  </p>
+                )
+              }
+
+              if (block.type === "image") {
+                return (
+                  <img
+                    key={i}
+                    src={block.value}
+                    alt={block.alt ?? ""}
+                    className="w-full rounded-lg border border-border"
+                  />
+                )
+              }
+
+              return null
+            })}
+          </div>
+        )}
+      </Modal>
+    {/* Entire Modal section was generated using ChatGPT. */}
+
     </section>
-)}
+  )
+}
