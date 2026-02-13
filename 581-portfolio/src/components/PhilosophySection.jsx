@@ -45,10 +45,10 @@ export const PhilosophySection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">
-                                    Sometimes Less is More
+                                    Sometimes Less Really Isn't More
                                 </h4>
                                 <p className="text-muted-foreground">
-                                    And other times, it's not
+                                    Assignment 1
                                 </p>
                             </div>
                         </div>
@@ -63,10 +63,10 @@ export const PhilosophySection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">
-                                    Project Two
+                                    Assignment 2
                                 </h4>
                                 <p className="text-muted-foreground">
-                                    Test
+                                    Assignment 2
                                 </p>
                             </div>
                         </div>
@@ -81,10 +81,10 @@ export const PhilosophySection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">
-                                   Project Three
+                                    Assignment 3
                                 </h4>
                                 <p className="text-muted-foreground">
-                                    Test
+                                    Assignment 3
                                 </p>
                             </div>
                         </div>

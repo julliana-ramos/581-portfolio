@@ -108,6 +108,14 @@ export const ProjectsSection = () => {
                 )
               }
 
+              if (block.type === "subtitle") {
+                return (
+                  <h4 key={i} className= "mb-2 text-lg font-bold">
+                    {block.value}
+                  </h4>
+                )
+              }           
+
               if (block.type === "image") {
                 return (
                   <img
