@@ -5,7 +5,7 @@ export const projects = [
       id: 1,
       title: "A Family of Buttons",
       description: "A pixel art web application that illustrates my team's individual personalities and group dynamic through button interactions.",
-      image: "/projects/project1.png",
+      image: "/projects/a1_final.png",
       tags: ["HTML", "CSS", "JavaScript"],
       demoUrl: "https://jasonvery.github.io/CPSC581Project1/",
       githubUrl: "https://github.com/Aljaysa/Button-Personality-Project",
@@ -162,7 +162,7 @@ export const projects = [
         },
         {
           type: "image",
-          value: "/projects/project1.png",
+          value: "/projects/a1_final.png",
           alt: "Final application",
         }, 
         {
@@ -178,18 +178,211 @@ export const projects = [
     {
       id: 2,
       title: "Expertise Sharing",
-      description: "test",
-      image: "/projects/project1.png",
-      tags: ["test", "test", "test"],
-      demoUrl: "#",
-      githubUrl: "#",
-  
-      // optional: you can add later
-      // writeup: [{ type: "text", value: "..." }]
+      description: "A creative, remote, and synchronous way for TinkerCAD experts to share their 3D modelling tips and tricks to novice users through interactive hand gestures.",
+      image: "/projects/a2_final.png",
+      tags: ["JavaScript", "CSS", "HTML"],
+      demoUrl: "https://cpsc581project2.onrender.com/",
+      githubUrl: "https://github.com/Jvery11/CPSC581Project2",
+      content: [
+        {
+          type: "subtitle",
+          value: "First Divergence",
+        },
+        {
+          type: "text",
+          value:
+          "TinkerCAD (as well as any CAD software for that matter) was a new tool that I had never used prior to this assignment, so to start, I began by exploring the application to understand its workflow. During this process, I became familiar with the various tools available to users to manipulate 3D models, as well as the TinkerCAD specific features such the 'Learn' section where novice users are able to follow step by step tutorials on how to model specific objects.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch1.png",
+          alt: "TinkerCAD Screenshot",
+        }, 
+        {
+          type: "text",
+          value:
+          "The ‘Learn’ section sparked my initial design, where experts would walk novice users through a step by step tutorial on a modelling a certain object that requires the use of common tools such as Alignment, Rotation, and Scale. Rather than novice users reading text instructions on how to manipulate these shapes correctly with those tools, experts would demonstrate these manipulations with hand gestures instead. The tips and tricks novice users learn from modelling this object would ideally be useful for future, more complex projects, making this design a resource for learning foundational 3D modelling skills.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch2.jpg",
+          alt: "Initial 'learn' desgin",
+        },
+        {
+          type: "text",
+          value:
+          "To provide novice users with a richer system interaction, I thought of including visual and audio signals as elements of embodied output. A specific signal would be triggered for when the expert demonstrates shape manipulations correctly or incorrectly, to emphasize what should and should not be done when 3D modelling.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch3.jpg",
+          alt: "Initial 'learn' desgin feedback",
+        },
+        {
+          type: "subtitle",
+          value: "First Convergence",
+        },
+        {
+          type: "text",
+          value:
+          "After developing our individual ideas, we came together as a group and discussed how to combine them into one system. Following this discussion, we developed our Pepper's Ghost Illusion prototype, which uses projector software/hardware to display a 3D model on a piece of acrylic, allowing novice users to see the object's scale in the real world.", 
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch4.png",
+          alt: "Pepper's Ghost Illusion",
+        },
+        {
+          type: "text",
+          value:
+          "Note: Acrylic Stand was 3D printed by my group member Jason, and was added here for reference only.",
+        },
+        {
+          type: "text",
+          value:
+          "While we believed that this was a novel solution that didn’t rely on screen sharing or video calls, we ultimately found that its flaws outweighed its merits. Due to the Illusion’s poor image quality which limited the details we could include in the shared 3D model, the limited amount of embodied input and output it could support, and the fact that the Illusion didn’t even look very 3D to begin with, we decided to drop this design and diverge once again.",
+        },
+        {
+          type: "subtitle",
+          value: "Second Divergence",
+        },
+        {
+          type: "text",
+          value:
+          "As I began my second round of ideating, I decided to focus less on the feasibility of my designs, as I found that this constraint limited the range of solutions I was allowing myself to come up with.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch5.png",
+          alt: "Overlay Sketch",
+        },
+        {
+          type: "text",
+          value:
+          "This design conveys expertise by demonstrating the step by step process required to create a specific object, simialr to my very first design. In this idea, however, the novice would screenshare to the expert, and our application would appear as an overlay on the novice’s screen. The expert would be able to drag and manipulate objects to the overlay with hand gestures to show the novice a ‘preview’ of what the next step of the object should end up looking like. The intent is to mimic rich, in real life interactions, as if the novice and expert were side by side and able to actually point at specific areas along the screen.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch6.png",
+          alt: "Precise Gesture Sketch",
+        },
+        {
+          type: "text",
+          value:
+          "This second design, which conveys the expertise of precisely aligning and rotating objects, emerged as a result of the limitations we found with the Pepper Ghost Illusion prototype. With the Pepper Ghost Illusion, we weren’t able to incorporate a way to accurately rotate and align objects, since the projector could not support small and detailed images such as a small ruler. Further, the illusion also could not support the colour changing border.",
+        },
+        {
+          type: "text",
+          value:
+          "This new design addresses these shortcomings. The expert uses hand gestures to tap on the edges of their screen to precisely manipulate the objects, and the novice receives embodied output through the corresponding edges of their screen changing colours. ",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch7.png",
+          alt: "Multiexpert sketch",
+        },
+        {
+          type: "text",
+          value:
+          "This third design focuses more on how the novice user can receive feedback for their 3D model. The design requires three experts to interact with one novice, and relies on screen sharing as the core interaction to convey expertise. Using hand gestures, one expert could demonstrate the correct way to align two shapes, and another expert could demonstrate the incorrect way to align the same shapes. The third expert would analyze the novice’s shared screen that shows them copying the actions on TinkerCAD, and this expert would provide additional feedback to the novice through hand gestures. ",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch8.png",
+          alt: "Multiexpert sketch",
+        },
+        {
+          type: "text",
+          value:
+          "The fourth design combines the third idea's multisensory output and use of hand gestures with the second idea's multiexpert and screensharing feedback system. The first expert would display the correct movement to manipulate the object to the novice’s laptop, while the second expert would provide haptic and visual feedback through hand gestures to the novice’s phone.",
+        },
+        {
+          type: "subtitle",
+          value: "Second Convergence",
+        },
+        {
+          type: "text",
+          value:
+          "Jason and Justin had also created their own ideas, and with our new pool of designs, we came together and rated each one based on a set of criteria we defined to find the ‘Right Design;. The criteria we chose to rank our designs on were picked to narrow down a design that fit on the assignment prompt the best. Ultimately, we chose the design in Figure 16, which corresponds to my second design from our second divergence.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch9.png",
+          alt: "Second divergence comparison chart",
+        },
+        {
+          type: "subtitle",
+          value: "Third Divergence",
+        },
+        {
+          type: "text",
+          value:
+          "Now with our ‘Right Design’ we diverged once more to explore how we could improve our idea and ‘Design it Right'.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch10.png",
+          alt: "Second divergence comparison chart",
+        },
+        {
+          type: "text",
+          value:
+          "Since 3D modelling requires precise manipulation of objects to ensure that physical designs are functional and structurally sound, I wanted to include a way for the novice to view the exact measurements and rotations of the model so they could replicate it accurately in TinkerCAD. This design displays the measurements indicating how far an object has been moved in a specific direction.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch11.png",
+          alt: "Adjusted sketch",
+        },
+        {
+          type: "text",
+          value:
+          "Although the assignment prompt solely focuses on providing the expert user with an easy way to convey their expertise and feedback, I thought a nice addition to the application could be a way for novice users to also provide feedback of their understanding to the expert. This design allows novice users to also use hand gestures to signal to the expert if they understand a concept or need more explanation on it. Including this feature would create richer interaction between the expert and the novice, rather than the interaction being one sided.",
+        },
+        {
+          type: "text",
+          value:
+          "At this point, we also began prototyping potential UI designs on Figma. The expert UI mockup with a green background was created by Jason, and the designs with a white background were alternative UIs I created.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch12.png",
+          alt: "Green UI mockup",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_sketch13.png",
+          alt: "Alternative expert mockups",
+        },
+        {
+          type: "text",
+          value:
+          "The goal with these alternate UIs was to improve hand gesture clarity for the expert. Rather than simply having the expert’s webcam in the corner of the screen, in the design on the left, the expert user’s webcam occupies the entire canvas where the object is being modelled. The goal of this idea was to have the expert’s hands appear life-sized relative to the model, and create the effect of the expert’s hands actually holding the model to manipulate it. The design on the right follows a similar concept, however instead of displaying the expert’s hands through the webcam, the system displays the hand tracking lines instead.",
+        },
+        {
+          type: "subtitle",
+          value: "Third Convergence & Final Design",
+        },
+        {
+          type: "text",
+          value:
+          "Following another round of comparison charts and oral discussions as a group deciding what UI design and what specific features we wanted to include in our final submission, below is the final product we decided on/implemented.",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_final.png",
+          alt: "Final design home page",
+        },
+        {
+          type: "image",
+          value: "/projects/a2_final2.png",
+          alt: "Final design expert page",
+        },
+    ]
     },
     {
       id: 3,
-      title: "Group Project 3",
+      title: "Augmented Eating Experience",
       description: "test",
       image: "/projects/project1.png",
       tags: ["test", "test", "test"],

@@ -63,7 +63,7 @@ export const PhilosophySection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">
-                                    Assignment 2
+                                    Even If It’s Not Broken, Try And Break It
                                 </h4>
                                 <p className="text-muted-foreground">
                                     Assignment 2

@@ -19,11 +19,20 @@ export const philosophies = [
   },
   {
     id: 2,
-    title: "Test",
+    title: "Even If It’s Not Broken, Try And Break It",
     subtitle: "Assignment Two",
     icon: User,
     content: [
-      "Test"
+      "Routines are comfortable. Wake up, get dressed, go to work, go to school, go home, eat, sleep, and then repeat. Wake up, get dressed, go to work.. school.. home… eat… sleep… And then? Wake up, and do it all over again.",
+      "As redundant as it sounds, I love having this routine. The same way I rewatch my favorite movies because I know I’ll love the ending. The same way I reorder my favorite meal at a restaurant because I know I’ll love the taste. I’m happy knowing outcomes before I’ve even started taking action.",
+      "But sometimes I wonder, man what if I just quit my job and booked a flight home to Philippines next week? Throw in a tattoo appointment when I get there while we’re at it.",
+      "Though I don’t quite yet have the confidence (or financial stability) to quit my job, I have booked the spontaneous trip and corresponding tattoo appointment before, and those have been some of favourite of most fulfilling life memories so far.  When I come back home to my job and to school and to eating the same meals, these trips remind me that it’s good to break routine. To experience new things as a way to learn and grow.",
+      "It’s silly to compare my simple steps of confidence to explore the unknown to the ways I want to continue going forward in my processes of design, but Assignment 2 was just another reminder that it is good to do so.",
+      "While designing our application, not only did we get stuck with tunnel vision on a set of designs in our first cycle of divergence and convergence, but we were also going down a road that was constrained by feasibility… too focused on ideas that we knew were possible to implement, but might not have necessarily been the most creative or fulfilling to explore.",
+      "When we split up again for another round of ideation and dropped the feasibility constraint, we were able to come up with a wider range of ideas. Some of them were less practical than others, but having these new ideas opened roads for designs that we were more interested to work on. After we discussed as a group in our second convergence, we were able to refine our ideas into something that still felt creative but also reasonable to implement for our final submission.",
+      "So even though we knew our first round of ideas were realistic, even though we knew the outcome of them before taking action -on time submisson, possible to implement with our available tools- it was good to break the ‘routine’, and in a way, seperate exploration from evaluation.",
+      "If feasibility and other limitations are considered too early in a design process, it narrows the overall possibilities of the designs that can be considered. By removing these constraints in the beginning of ideating, it becomes easier to develop designs that are not only realistic, but also more thoughtful and engaging.",
+      "Maybe next time I’ll order something new at a restaurant. It’s possible I could hate it, but who knows? Maybe I’ll find my new favourite food.",
     ]
   },
   {
