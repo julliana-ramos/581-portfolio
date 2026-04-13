@@ -383,10 +383,148 @@ export const projects = [
     {
       id: 3,
       title: "Augmented Eating Experience",
-      description: "test",
-      image: "/projects/project1.png",
-      tags: ["test", "test", "test"],
-      demoUrl: "#",
-      githubUrl: "#",
+      description: "A pair of talking seasoning shakers, for when you might not know what to say.",
+      image: "/projects/a3_final.webp",
+      tags: ["C++"],
+      demoUrl: "https://drive.google.com/file/d/16oy78MFjxlg1aomkgz9evuC0TkQ0PtPm/view?usp=sharing",
+      githubUrl: "https://github.com/Jvery11/CPSC581SaltShaker",
+      content: [
+        {
+          type: "subtitle",
+          value: "First Divergence",
+        },
+        {
+          type: "text",
+          value:
+          "Ideating for this assignment was personally the easiest out of the three for me, as I felt like I could really relate to the the prompt. To address it, I started by asking myself: What makes eating with others 'bad', and what can I make to make it 'better'?",
+        },
+        {
+          type: "text",
+          value:
+          "Simple enough.",
+        },
+        {
+          type: "text",
+          value:
+          "I started with jotting down my personal experiences of eating with others, drawing from personal experiences of eating in groups of various sizes. I ideated on different designs that address issues I've encountered, including those that come from the physical limitations of a dining environment, to the awkward scenarios that can affect the emotional atmosphere. Here is the initial list of my ideas.",
+        },
+        {
+          type: "image",
+          value: "/projects/a3_sketch1.jpg",
+          alt: "List of eating ideas",
+        }, 
+        {
+          type: "text",
+          value:
+          "The first idea of 'good conversation' came from my personal experiences of eating with my friends or my family. I have a big family with about 11 cousins alone, and when we eat together, our group can grow to about 20+ people when we bring our partners as well. When we eat at restaurants or someone's house, seating is usually first come first serve, and once you've sat down, that remains your spot for the rest of the night. Because of this, we usually end up just talking to the same few cousins sitting near us the entire time, as it's just naturally harder to converse with people sitting at the other ends of a table or the other side of a room.",
+        },
+        {
+          type: "text",
+          value:
+          "To address the unintentional isolation by only talking to those seated beside you, and barely interacting, if at all, with the rest of the group, I came up with the idea to augment chairs and placemats. The chair will have a force sensitive sensor as input and will track how long each person has been sitting in their chair, and once all of the chair trackers have surpassed a certain amount of time, the placemats will output lights of the same colour at chairs that are far apart, and people will move to talk to those with the same coloured placemats. Having the chairs track how much time has passed since someone had been seated prevents the placemats from lighting up too early, which might interrupt conversations/ not give people enough time to have a meaningful interaction with those around them.",
+        },
+        {
+          type: "image",
+          value: "/projects/a3_sketch2.jpg",
+          alt: "Seat matcher idea",
+        }, 
+        {
+          type: "text",
+          value:
+          "Another thing I consider makes an eating experience better, is obviously having good food. Good lumpia (spring rolls), and good palabok (noodle dish), and good lechon (roasted pork).",
+        },
+        {
+          type: "image",
+          value: "/projects/a3_sketch5.webp",
+          alt: "Seat matcher idea",
+        }, 
+        {
+          type: "text",
+          value:
+          "But what issues can you still run into, even when the food is great?",
+        },
+        {
+          type: "text",
+          value:
+          "This sparked my idea of 'The Last Piece Syndrome.' This was more of a niche experience, as it's something I've only heard about for Filipino gatherings, but basically, it’s a cultural phenomenon where the last piece of food on a shared ‘communal dish’ is left untouched, in hopes to reflect modesty, politeness, and the value of ‘hiya’, or in English, shame. This stems from the desire to not be seen as greedy or to leave food for others, as a display of respect or consideration. And for my family, it's pretty common.",
+        },
+        {
+          type: "text",
+          value:
+          "To eliminate this self conscious feeling, I thought of augmenting plates once again. Somehow the ‘communal dish’ plate would be able to sense the weight of when the last piece of food remains as input, and it would output a light signal to whoever wants the last piece to move their individual plates towards it. The communal plate would detect whose plates are near it and would randomly output who would take the last piece, eliminating the shyness one might feel by turning it into a game of luck. Further, having the lights as output is clear yet undisruptive, unlike if the plate was to emit an audio signal that says “The last piece remains!” or “Julliana gets the last piece!”, which can be more interrupting to the dinner than augmenting it.",
+        },
+        {
+          type: "image",
+          value: "/projects/a3_sketch3.jpg",
+          alt: "The last piece idea",
+        }, 
+        {
+          type: "text",
+          value:
+          "Finally, one more issue I've noticed when eating with my big family is needing to reach over others to get something at the other end of the table. This can be interruptive if the person you are reaching over is in the middle of taking a bite of food or having a conversation with someone else. To address this, I thought of the idea to augment some cups as well as the table itself. Each person would have a cup at their seat and it would take their touch as input, and if the entire rim of the cup is covered by the person’s hand, then the centre of the table holding all the food and utensils would rotate as output. The idea to use a cup as the input sensor was to eliminate false rotation of the table. The only time the entire rim of the cup would be covered is if this was covered on purpose, ensuring the centre of the table only moves when someone wants it to.",
+        },
+        {
+          type: "image",
+          value: "/projects/a3_sketch4.jpg",
+          alt: "Rotating table idea",
+        }, 
+        {
+          type: "subtitle",
+          value: "First Convergence",
+        },
+        {
+          type: "text",
+          value:
+          "When we came together with our designs, we particularly liked this one that Jason had brought up: 'What is one of the worst parts about eating with large groups of people or with people you don't know that well? Well we think it's the weird awkward silence when no one knows what to say. To combat this weirdness we are proposing a conversation starter salt shaker. When the conversation starts to get dry… just simply shake the salt shaker which will then use a built in speaker to read out a conversation starting prompt.'",
+        },
+        {
+          type: "text",
+          value:
+          "We ideated that with a conversation starter salt shaker, we could combine it with a pepper shaker of a different functionality to incorporate some ideas that Justin and I also had. Since we realized that many of our designs involve “selecting something” (who will get the last piece, who will pay the bill, what type of food we will eat), the pepper shaker could be a 'random selector' that works in tandem with the salt shaker.",
+        },
+        {
+          type: "subtitle",
+          value: "Second Divergence and Convergence",
+        },
+        {
+          type: "text",
+          value:
+          "At this point in our project, the design process became more collaborative than individual. We ideated on different type of inputs we could use for the shakers, including buttons, haptic shaking, and voice recognition. For outputs we ideated on different screens, lights, and speakers. ",
+        },
+        {
+          type: "text",
+          value:
+          "Through table rankings of our designs, in the end we decided that since the salt shaker would be used as a conversation starter, we would go with the haptic activation method for it because shaking allows the user to demonstrate that they would like to start a conversation. Further, the shaking mechanism and device could be a conversation starter on its own for users who have never seen the device before.", 
+        },
+        {
+          type: "text",
+          value:
+          "As for the ‘random selector’ pepper shaker, we decided to go with the button activation method. Since the pepper shaker would be displaying names and food, we needed a way to accurately and precisely switch between these different ‘modes,’ as well as displaying a selection (either name or food) in each mode. Although the haptic method could be used here (for example: shake twice to change modes, and shake three times to display a selection) there was more room to misdetect the number of shakes than there was to misdetect how a button was pressed (i.e. double click, click and hold, etc.).",
+        },
+        {
+          type: "text",
+          value:
+          "Below is the story board I drew to ensure our group was on the same page in terms of functionality and user flow of the shakers.",
+        },
+        {
+          type: "image",
+          value: "/projects/a3_sketch6.jpg",
+          alt: "Story board of salt and pepper idea",
+        }, 
+        {
+          type: "subtitle",
+          value: "Final Design",
+        },
+        {
+          type: "text",
+          value:
+          "Here is the final product, 3D printed and coded up by Jason.",
+        },
+        {
+          type: "image",
+          value: "/projects/a3_final.webp",
+          alt: "Final salt and pepper shaker",
+        }, 
+      ]
     },
   ]

@@ -5,7 +5,7 @@ export const philosophies = [
   {
     id: 1,
     title: "Sometimes Less Really Isn't More",
-    subtitle: "Assignment 1",
+    subtitle: "Assignment One",
     icon: Lightbulb,
     content: [
       "I’ve always been a simple, stubborn person. A creature of habit. When I like something or I become comfortable somewhere, it takes a lot for me to branch out and be open to new ideas. This trait of mine has followed me throughout many aspects of my academic career. I’ve always had the same group of friends. I’ve always studied at the same Science Theatre tables. I’ve always parked in Lot 10, and walked through the Kineseology, Mac Hall, and Science B buildings to get to my lectures in ICT, because even if there might be a quicker route, I am a simple, stubborn person.",
@@ -37,11 +37,18 @@ export const philosophies = [
   },
   {
     id: 3,
-    title: "Test",
-    subtitle: "Assignemtn Three",
+    title: "Team and Dream Rhyme for a Reason",
+    subtitle: "Assignment Three",
     icon: Briefcase,
     content: [
-      "Test"
+      "I am the shyest, most introverted person you could probably ever meet. I get so nervous around new groups of people. Most times my heart will pound, and my ears will ring, and I overthink everything I want to say to the point where I usually end up saying nothing at all.",
+      "Bringing this back to my past two philosophies, I think I’m like this because of how much I rely on routine. I find comfort in my family and my childhood friends, because I’ve never known anything but being myself around them. As much as they know me, I also know them, so I know almost every time how they will react to my opinions or actions or ideas.",
+      "This is why I was so nervous for this class, and for every class that I’ve had before that was group project based. It’s hard for me to not overthink what my group might think of my ideas, or that we might not get along personality wise, or that some members won’t pull their weight fairly. Confrontation makes my skin crawl, so I try to avoid it as much as possible, and in turn, avoid group project based classes as much as possible.",
+      "Thankfully, I’ve only had a couple less-than-ideal group project experiences, and I’m really glad to say that CPSC581 was not one of them. Along with the other amazing group projects I’ve done throughout my uni career, including ones in CPSC481 and SENG511, CPSC581 reminded me why working in groups is so beneficial.",
+      "The number of ideas we came up for each assignment, along with the range and variety of designs we came up with was so much greater than what I could have achieved alone. While I consider myself a pretty creative person, I know there will always be ideas I just simply would never come up with on my own. Working with others, who bring their own creative direction and ideas influenced by things like their preferences and personal experiences, expanded the number of designs we explored so greatly.",
+      "Group projects can also get work done more efficiently than doing things alone. For my group specifically, we each had our own strengths, where some were better at coding, while others were more creative with coming up with designs. With our dynamic, I’m proud of how efficient and thorough we were with completing our projects. ",
+      "Finally, successful group projects always give a confidence boost to just try and be more, for lack of better word, out there. As corny as it sounds, they remind me that I do have good ideas worth sharing, and that it is okay to constructively criticise people I don’t know well, and that I don’t always have to complete my work alone. A big part of this working so smoothly this semester was my entire group’s open mindedness, and that’s one important quality I will continue to look for in others, as well as continue to strive for in myself as I move from uni projects and my part time job into the real world.",
+      "All this said, I do think I will always be an introverted person. And there’s some people pleasing part of me that will always choose harmony over conflict. But working with others, especially for CPSC581 with people like Jason and Justin, reminds me why these experiences can be so valuable, and makes me more willing to put myself in those situations again.",
     ]
   }
 ];

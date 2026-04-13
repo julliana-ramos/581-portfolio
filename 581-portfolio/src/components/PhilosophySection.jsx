@@ -22,8 +22,9 @@ export const PhilosophySection = () => {
                     </p>
 
                     <p className="text-muted-foreground">
-                        ***For final submission, this will be around 2 paragraphs of summary for what
-                        I learned throughout the course.
+                        CPSC581 was a course that not only taught me about valuable design tools,
+                        but also helped me reflect on the kind of work ethics I want to continue
+                        striving for beyond my university career!
                     </p>
 
                     <p className="text-muted-foreground">
@@ -81,7 +82,7 @@ export const PhilosophySection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">
-                                    Assignment 3
+                                    Team and Dream Rhyme for a Reason
                                 </h4>
                                 <p className="text-muted-foreground">
                                     Assignment 3
